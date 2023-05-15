@@ -1,0 +1,15 @@
+[package]
+name = "remote-bank-graphql"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.3.1"
+actix-web-lab = "0.19.1"
+dotenvy = "0.15.7"
+env_logger = "0.10.0"
+juniper = "0.15.11"
+juniper_actix = "0.4.0"
+sea-query = {version = "0.28.4", features = ["backend-mysql", "attr"]}
+sea-query-binder = {version = "0.3.0", features = ["sqlx-any", "sqlx-mysql"]}
+sqlx = {version = "0.6.3", features = ["runtime-actix-native-tls", "any", "migrate"]}
